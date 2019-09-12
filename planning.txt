@@ -20,5 +20,7 @@ On terminal:
 Time to think about how I will initialize my models....
 .clean up my data.json so it will matches with my models field as much as I can 
 .seed my data 
-.look an mango shell to see is I can see my collections
+.look an mango shell is there any collections
 .whenever my data is seeded start thinking about controllers and routes
+
+Now when I get all my events and tested that out on Postman and GET works, I need to create other methods and test them out as well.

@@ -6,11 +6,11 @@ const Event = new Schema ({
     type: String,
     url: String,
     locale: String,
-    // presales: [{
-    //     startDateTime: Date,
-    //     endDateTime: Date,
-    //     name: String
-    // }],
+    presales: [{
+        startDateTime: Date,
+        endDateTime: Date,
+        name: String
+    }],
     // priceRanges: [{
     //     type: String,
     //     currency: String,

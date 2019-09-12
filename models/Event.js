@@ -1,6 +1,13 @@
 const mongoose = require("../db/connection")
 const Schema = mongoose.Schema
 
+// const priceRangeSchema = new Schema({
+//     type: {type: String},
+//     currency: {type: String},
+//     min: {type: Number},
+//     max: {type: Number}
+// })
+
 const Event = new Schema ({
     name: String,
     type: String,
@@ -11,12 +18,15 @@ const Event = new Schema ({
         endDateTime: Date,
         name: String
     }],
-    // priceRanges: [{
-    //     type: String,
-    //     currency: String,
-    //     min: Number,
-    //     max: Number
-    // }],
+    // priceRanges: [priceRangeSchema],
+    priceRanges: [
+        {
+            type: {type: String},
+            currency: {type: String},
+            min: {type: Number},
+            max: {type: Number}
+        }
+    ],
     seatmap:[{
         staticUrl: String
     }],

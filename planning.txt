@@ -23,4 +23,12 @@ Time to think about how I will initialize my models....
 .look an mango shell is there any collections
 .whenever my data is seeded start thinking about controllers and routes
 
-Now when I get all my events and tested that out on Postman and GET works, I need to create other methods and test them out as well.
+Now when I get all my events and tested that out on Postman and GET works, I need to 
+create other methods and test them out as well.
+
+Add some more fields on Event models
+Add description for all methods for Event inside README
+Push everything to GitHub
+Deploy to Heroku
+And only after all, add AJAX and JQuery to make it look pretty:)
+

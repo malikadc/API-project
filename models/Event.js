@@ -17,9 +17,9 @@ const Event = new Schema ({
     //     min: Number,
     //     max: Number
     // }],
-    // seatmap:[{
-    //     staticUrl: String
-    // }],
+    seatmap:[{
+        staticUrl: String
+    }],
     attraction: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Attraction"

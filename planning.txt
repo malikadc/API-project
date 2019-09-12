@@ -1,0 +1,24 @@
+First think I am starting with is making a plan. I came with idea to create ticketmaster API using free resource to get all data.json from here: https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=ZwX9RHpLG7IGWGNyWGI1O1dra8fS4fB0.
+Than I have decided to create my models, looking at my data which I get from Postman in a piece of paper. Now it's time to create an Express App. 
+
+On terminal:
+    mkdir APP-project
+    cd APP-project
+    npm install express
+    npm install mongoose
+    npm install body-parser
+
+First thing to do after installing everything is to set up index.js and run node index.js to see is server running.
+Than it's time to start creating folders for project.
+
+On terminal:
+    mkdir models controllers routes
+    cd models
+    touch Event.js Attraction.js Venues.js
+    code .
+
+Time to think about how I will initialize my models....
+.clean up my data.json so it will matches with my models field as much as I can 
+.seed my data 
+.look an mango shell to see is I can see my collections
+.whenever my data is seeded start thinking about controllers and routes

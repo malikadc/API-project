@@ -32,3 +32,6 @@ Push everything to GitHub
 Deploy to Heroku
 And only after all, add AJAX and JQuery to make it look pretty:)
 
+
+mongodb+srv://Malika:Granpa@cluster0-n69jn.mongodb.net/test?retryWrites=true&w=majority
+

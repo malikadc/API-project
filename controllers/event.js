@@ -20,6 +20,7 @@ module.exports = {
         res.json(events))
     },
     create: (req,res)=>{
+        console.log(req.body, (typeof req.body))
         Event.create(req.body).then( events => res.json(events))
     },
     update: (req,res)=> {

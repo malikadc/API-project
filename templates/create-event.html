@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <title>API Doc</title>
+    <style>
+        body {
+            background-image: url(https://images.unsplash.com/photo-1489513691500-41ef4acdb665?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+            background-repeat: no-repeat; 
+            background-size: cover;
+            font-family: 'Shadows Into Light', cursive;
+            color: white;
+            
+        }
+        .container{ 
+            margin: 0 auto; 
+            width:250px;
+            padding: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form></form>
+            Event name:<br>
+            <input id="name" type="text" name="name"><br>
+            Event type:<br>
+            <input id= "type" type="text" name="type"><br>
+            Event url:<br>
+            <input id="url" type="text" name="url"><br>
+
+            <input class="submit-btn" type="submit" value="Create">
+          </form>
+    </div>
+    <script>
+        const submit = document.querySelector('.submit-btn');
+        submit.addEventListener('click', function(e){
+            e.preventDefault();
+            const body = {
+                name: document.querySelector('#name').value,
+                type: document.querySelector('#type').value,
+                url: document.querySelector('#url').value,
+            };
+
+            return fetch('/api/event/', {
+                method: 'POST', 
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(body), // body data type must match "Content-Type" header
+            })
+            .then(document.location.pathname = '/list-events/');
+        })
+    </script>
+</body>
+</html>
